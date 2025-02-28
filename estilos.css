@@ -1,0 +1,53 @@
+/* Reset básico: elimina márgenes y padding predeterminados y establece box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales para el body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Encabezado y Navegación */
+  header {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Contenido principal */
+  main {
+    padding: 20px;
+  }
+  
+  /* Pie de Página */
+  footer {
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  

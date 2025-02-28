@@ -1,0 +1,248 @@
+/* -------------------------------
+   Sección de Bienvenida
+---------------------------------- */
+.bienvenida {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bienvenida h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* -------------------------------
+     Carrusel de Fotos
+  ---------------------------------- */
+.carrusel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+/* -------------------------------
+     Sección de Destacados
+  ---------------------------------- */
+.destacados {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.destacados h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Contenedor de tarjetas en una sola fila */
+.mascota-destacada {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+/* Tarjeta con efecto flip */
+.tarjeta {
+    perspective: 1000px;
+    width: 700px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.tarjeta-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.tarjeta:hover .tarjeta-inner {
+    transform: rotateY(180deg);
+}
+
+.tarjeta-front,
+.tarjeta-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.tarjeta-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjeta-back {
+    background-color: #f9f9f9;
+    color: #333;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* -------------------------------
+     Sección de API: Imagen de Perro Aleatoria
+  ---------------------------------- */
+/* Contenedor que agrupa ambas secciones de API */
+.api-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 40px auto;
+    max-width: 1200px;
+    /* Puedes ajustar este valor según tu diseño */
+}
+
+/* Cada sección ocupará el 50% del ancho menos el espacio del gap */
+.api {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.api h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.api p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.api content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.api button {
+    padding: 12px 25px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.api button:hover {
+    background-color: #e65a50;
+}
+
+.dog-image-container {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.api-image-container img {
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* -------------------------------
+     Footer (opcional)
+  ---------------------------------- */
+footer {
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* -------------------------------
+     Media Queries para Responsividad
+  ---------------------------------- */
+@media screen and (max-width: 768px) {
+    .carrusel {
+        height: 300px;
+    }
+
+    .mascota-destacada {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 90%;
+    }
+
+    .api-dog {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .dog-image-container img {
+        width: 100%;
+        height: auto;
+    }
+}

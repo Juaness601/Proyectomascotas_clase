@@ -1,0 +1,142 @@
+/* Estilos generales para secciones */
+.acerca,
+.historia,
+.equipo {
+  margin-bottom: 30px;
+}
+
+.acerca h2,
+.historia h2,
+.equipo h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Estilos para párrafos */
+.acerca p,
+.historia p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Contenedor de columnas */
+.col-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Columnas para imagen y texto */
+.col-imagen,
+.col-texto {
+  flex: 1 1 50%;
+}
+
+/* Estilos de las imágenes */
+.img-acerca,
+.img-historia {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsividad para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .col-container {
+    flex-direction: column;
+  }
+}
+
+/* Estilos para la sección "Nuestro Equipo" */
+.equipo .miembros {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.equipo article {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 45%;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.equipo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la sección "Testimonios" */
+section.testimonios {
+  background-color: #fff;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+section.testimonios h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+section.testimonios > p {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.testimonios .testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+section.testimonios blockquote {
+  margin: 0;
+  padding: 20px;
+  border-left: 5px solid #ff6f61;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  text-align: left;
+}
+
+section.testimonios blockquote p {
+  font-style: italic;
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+}
+
+section.testimonios blockquote footer {
+    background-color: transparent;
+  margin-top: 15px;
+  padding-top: 8px;
+  border-top: 1px solid #ddd;
+  font-size: 0.9em;
+  color: #777;
+  text-align: right;
+  font-style: italic;
+}
+
+/* Estilos para el Footer */
+footer {
+  background-color: #333;
+  color: #ddd;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}

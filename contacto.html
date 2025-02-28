@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- Declara HTML5 -->
+<html lang="es"> <!-- Idioma del documento -->
+<head>
+  <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración para dispositivos móviles -->
+  <title>Mundo Mascota - Contacto</title> <!-- Título de la página -->
+  <link rel="icon" type="image/png" href="img/Favicon.png"><!-- Icono de la página -->
+  <link rel="stylesheet" href="estilos.css"> <!-- Enlace al archivo CSS compartido -->
+  <link rel="stylesheet" href="estilosContacto.css"> <!-- Enlace al archivo CSS compartido -->
+</head>
+<body>
+  <header> <!-- Encabezado común -->
+    <h1>Mundo Mascota</h1>
+    <nav> <!-- Menú de navegación -->
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="adopta.html">Adopta</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main> <!-- Contenido principal de la página de Contacto -->
+    <!-- Sección de formulario de contacto -->
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <p>¿Tienes alguna pregunta o comentario? Escríbenos y te responderemos a la brevedad.</p>
+      <form action="enviar.php" method="post"> <!-- Acción del formulario: archivo de procesamiento -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Sección con información adicional de contacto -->
+    <section class="info-contacto">
+      <h2>Información de Contacto</h2>
+      <p><strong>Dirección:</strong> Calle Falsa 123, Bogotá, Colombia</p>
+      <p><strong>Teléfono:</strong> +57 23 456 7890</p>
+      <p><strong>Email:</strong> info@mundo-mascota.com</p>
+    </section>
+  </main>
+
+  <footer> <!-- Pie de página -->
+    <p>&copy; 2025 Mundo Mascota. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
