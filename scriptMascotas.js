@@ -62,13 +62,6 @@ const pets = [
         age: '6 años',
         gender: 'Macho',
         image: 'img/perro5.jpg'
-      },
-      {
-        type: 'gato',
-        name: 'Simba',
-        age: '4 años',
-        gender: 'Macho',
-        image: 'img/gato5.jpg'
       }
 ];
 
