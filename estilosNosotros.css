@@ -1,142 +1,171 @@
-/* Estilos generales para secciones */
+/* Estilos generales para las secciones */
 .acerca,
 .historia,
-.equipo {
-  margin-bottom: 30px;
+.equipo,
+.testimonios {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Encabezados estilizados */
 .acerca h2,
 .historia h2,
-.equipo h2 {
-  margin-bottom: 10px;
+.equipo h2,
+.testimonios h2 {
+  margin-bottom: 20px;
   text-align: center;
+  font-size: 2rem;
+  color: #ff6f61;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-/* Estilos para párrafos */
-.acerca p,
-.historia p {
-  text-align: justify;
-  line-height: 1.6;
-}
-
-/* Contenedor de columnas */
+/* Contenedor de columnas actualizado */
 .col-container {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
   justify-content: center;
-}
-
-/* Columnas para imagen y texto */
-.col-imagen,
-.col-texto {
-  flex: 1 1 50%;
-}
-
-/* Estilos de las imágenes */
-.img-acerca,
-.img-historia {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Responsividad para dispositivos móviles */
-@media screen and (max-width: 768px) {
-  .col-container {
-    flex-direction: column;
-  }
-}
-
-/* Estilos para la sección "Nuestro Equipo" */
-.equipo .miembros {
-  display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
 }
 
+/* Imagenes responsivas y centradas */
+.col-imagen img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.col-imagen img:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para el texto */
+.col-texto p {
+  text-align: justify;
+  line-height: 1.8;
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Sección equipo renovada */
+.equipo .miembros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .equipo article {
-  background-color: #fff;
+  background: #fff;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  width: 45%;
-  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 280px;
+  padding: 15px;
   text-align: center;
-  padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.equipo article:hover {
+  transform: translateY(-5px);
 }
 
 .equipo img {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
 }
 
-/* Estilos para la sección "Testimonios" */
-section.testimonios {
-  background-color: #fff;
-  padding: 30px;
-  margin: 40px auto;
-  max-width: 1000px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-section.testimonios h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-section.testimonios > p {
-  font-size: 1.1em;
-  color: #666;
-  margin-bottom: 30px;
-}
-
-.testimonios .testimonios-grid {
+/* Sección de Testimonios renovada */
+.testimonios-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
-section.testimonios blockquote {
-  margin: 0;
-  padding: 20px;
+.testimonios blockquote {
+  padding: 15px;
   border-left: 5px solid #ff6f61;
-  background-color: #f9f9f9;
-  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
   text-align: left;
-}
-
-section.testimonios blockquote p {
   font-style: italic;
-  font-size: 1.1em;
-  color: #333;
-  line-height: 1.6;
 }
 
-section.testimonios blockquote footer {
-    background-color: transparent;
-  margin-top: 15px;
-  padding-top: 8px;
-  border-top: 1px solid #ddd;
-  font-size: 0.9em;
-  color: #777;
+.testimonios footer {
+  margin-top: 10px;
   text-align: right;
-  font-style: italic;
+  font-weight: bold;
+  background-color: transparent;
+  color: #555;
 }
 
-/* Estilos para el Footer */
-footer {
-  background-color: #333;
-  color: #ddd;
+
+#sobre-nosotros-historia {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#sobre-nosotros-historia .col-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#sobre-nosotros-historia .card {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: justify;
+  transition: transform 0.3s ease;
+}
+
+#sobre-nosotros-historia .card:hover {
+  transform: translateY(-5px);
+}
+
+#sobre-nosotros-historia h3 {
   text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
+  color: #ff6f61;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#sobre-nosotros-historia .col-imagen img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+/* Responsividad móvil */
+@media screen and (max-width: 768px) {
+  .col-container {
+    flex-direction: column;
+  }
+
+  .equipo article {
+    width: 100%;
+  }
 }
