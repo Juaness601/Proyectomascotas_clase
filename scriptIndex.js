@@ -1,6 +1,6 @@
 // Función para obtener una imagen aleatoria de perro mediante la API de Dog CEO
 document.getElementById("btn-dog").addEventListener("click", function() {
-    fetch("https://dog.ceo/api/breeds/image/random")
+    fetch("https://dog.ceo/api/breeds/image/random")//solicitud HTTP
       .then(response => response.json()) // Convierte la respuesta a JSON
       .then(data => {
         // Inserta la imagen obtenida en el contenedor "dog-image"
